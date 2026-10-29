@@ -1,0 +1,26 @@
+@use '../variables' as *;
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 36px;
+  overflow: hidden;
+  // затухание правого края, как в макете
+  mask-image: linear-gradient(to right, #000 85%, transparent);
+
+  &__item {
+    flex: none;
+    padding: 12px 22px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: none;
+    color: $color-muted;
+    white-space: nowrap;
+
+    &--active {
+      border-color: $color-mint;
+      background: $color-white;
+      color: $color-text;
+    }
+  }
+}

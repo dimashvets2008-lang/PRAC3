@@ -1,0 +1,57 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.header {
+  background: $color-white;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &__logo {
+    padding-left: 20px;
+    border-left: 1px solid $color-line;
+    color: $color-slate;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    line-height: 1;
+    text-decoration: none;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 12px;
+
+    &:first-of-type {
+      margin-left: auto;
+    }
+
+    &--divided {
+      padding-left: 16px;
+      border-left: 1px solid $color-line;
+    }
+  }
+
+  @include md {
+    &__inner {
+      gap: 10px;
+    }
+
+    &__logo {
+      display: none;
+    }
+
+    &__actions {
+      gap: 8px;
+
+      &--divided {
+        display: none;
+      }
+    }
+  }
+}

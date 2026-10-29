@@ -1,0 +1,14 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.card {
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+
+  @include mobile {
+    padding: 16px;
+  }
+  user-select: none;
+  backdrop-filter: blur(4px);
+}

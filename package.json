@@ -1,0 +1,25 @@
+{
+  "name": "my-app",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.6.1",
+    "postcss-sort-media-queries": "^6.7.1",
+    "sass": "^1.106.1",
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "swiper": "^14.3.0"
+  }
+}
