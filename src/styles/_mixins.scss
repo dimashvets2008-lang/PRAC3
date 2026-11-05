@@ -1,0 +1,29 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin icon-button-base($size: 44px) {
+  width: $size;
+  height: $size;
+  border-radius: 50px;
+  @include flex-center;
+  border: none;
+  cursor: pointer;
+  background-color: $color-accent;
+  padding: 0;
+  overflow: hidden;
+
+  img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+}
+
+@mixin media-up($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}

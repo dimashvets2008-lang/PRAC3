@@ -1,0 +1,45 @@
+.page-title {
+    position: relative;
+    font-size: 28px;
+    font-weight: 700;
+    color: $color-text;
+    margin: 0;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 40px;
+        background-color: $color-element;
+        border-radius: 0 4px 4px 0;
+    }
+}
+
+.services {
+    padding: 24px 0;
+}
+
+@media (min-width: $tablet-width) {
+    .page-title {
+        padding-left: 23px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .services {
+        padding-top: 0;
+    }
+
+    .page-title {
+        margin-top: -55px;
+        padding-left: 35px;
+        margin-bottom: 10px;
+    }
+}

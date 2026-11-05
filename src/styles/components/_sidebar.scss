@@ -1,0 +1,117 @@
+.sidebar {
+    display: none;
+}
+
+@media (min-width: $desktop-width) {
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 280px;
+        min-height: 100vh;
+        flex-shrink: 0;
+        padding: 30px 20px;
+        background-color: $color-white;
+
+        &__action-btn {
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &__contact-link.sidebar__phone {
+            font-size: 20px;
+            font-weight: 700;
+            color: $color-text;
+            margin-top: 12px;
+            display: block;
+           
+        }
+
+        &__contact-link {
+            text-decoration: none;
+            color: $color-text;
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            margin-top: 8px;
+        }
+
+        &__langs {
+            display: flex;
+            gap: 8px;
+            margin-top: 35px;
+        }
+
+        &__lang {
+            text-decoration: none;
+            color: $color-text;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+
+            &--active {
+                color: $color-muted;
+            }
+        }
+
+        &__top {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-top: 45px;
+            margin-bottom: auto;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: $color-text;
+            font-weight: 500;
+            font-size: 16px;
+            display: block;
+            position: relative;
+
+            &--active {
+                color: $color-muted;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: -20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 4px;
+                    height: 34px;
+                    background-color: $color-element;
+                    border-radius: 0 4px 4px;
+                }
+            }
+        }
+    }
+
+    .sidebar button,
+    .sidebar img,
+    .sidebar input {
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+
+    .sidebar__search img,
+    .sidebar__action-btn img {
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+    }
+}
