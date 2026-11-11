@@ -1,12 +1,9 @@
-@import './_variables';
-@import './_mixins';
-@import './_base';
+@use "base";
 
-@import './components/header';
-@import './components/article';
-@import './components/page-title';
-@import './components/tabs';
-@import './components/services-content';
-@import './components/sidebar';
-
-
+@use "components/icon-button";
+@use "components/header";
+@use "components/page-title";
+@use "components/tabs";
+@use "components/article";
+@use "components/footer-title";
+@use "components/slidebar";

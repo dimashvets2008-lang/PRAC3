@@ -1,0 +1,22 @@
+// круглая кнопка-иконка 40x40 (бургер, звонок, чат, профиль, ремонт, статус)
+.icon-button {
+  display: block;
+  flex: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+
+  img {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+}

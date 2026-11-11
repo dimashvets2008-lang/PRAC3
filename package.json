@@ -8,19 +8,18 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ],
   "devDependencies": {
     "autoprefixer": "^10.6.1",
     "postcss-sort-media-queries": "^6.7.1",
     "sass": "^1.106.1",
-    "vite": "^8.3.0",
-    "vite-plugin-image-optimizer": "^2.0.3"
+    "vite": "^8.3.4"
   },
+  "browserslist": [
+    ">1%",
+    "last 2 version"
+  ],
   "dependencies": {
     "normalize.css": "^8.0.1",
-    "swiper": "^14.3.0"
+    "sass-embedded": "^1.106.1"
   }
 }
