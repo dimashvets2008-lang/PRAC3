@@ -60,7 +60,6 @@
     object-position: center;
   }
 
-  // раскрытый текст (телефон)
   &.is-open &__text--extra {
     display: block;
   }

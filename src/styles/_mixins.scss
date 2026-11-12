@@ -1,6 +1,5 @@
 @use "variables" as *;
 
-// mobile-first: стили срабатывают от этой ширины и выше
 @mixin tablet {
   @media (min-width: $breakpoint-tablet) {
     @content;
